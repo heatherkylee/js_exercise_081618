@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "dist";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -93,7 +93,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var moment = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n\nconsole.log(\"test\");\nconsole.log(moment().add(1, 'days').calendar()); \n\nvar numeral = __webpack_require__(/*! numeral */ \"./node_modules/numeral/numeral.js\");\n\nconsole.log(\"numeral\");\nconsole.log(numeral('$10,000.00'));\n\n//# sourceURL=webpack:///./index.js?");
+"use strict";
+eval("\n\nvar moment = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n\nconsole.log(\"test\");\nconsole.log(moment().add(1, 'days').calendar());\n\nvar numeral = __webpack_require__(/*! numeral */ \"./node_modules/numeral/numeral.js\");\n\nconsole.log(\"numeral\");\nconsole.log(numeral('$10,000.00'));\n\nconsole.log(\"before babel\");\n// var bob = {\n//   _name: \"Bob\",\n//   _friends: [],\n//   printFriends() {\n//     this._friends.forEach(f =>\n//       console.log(this._name + \" knows \" + f));\n//     console.log(this._friends);\n//   }\n// };\n\"In ES5 this is\\n not legal.\";\nconsole.log(\"In ES5 this is\\n not legal.\");\nconsole.log(\"after babel\");\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
